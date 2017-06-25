@@ -5172,6 +5172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1794625467}
   - component: {fileID: 1794625466}
+  - component: {fileID: 1794625468}
   - component: {fileID: 1794625465}
   m_Layer: 0
   m_Name: EventSystem
@@ -5225,6 +5226,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1794625468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1794625464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1bb4e1b2a0a04d2ea3b96ff7e05685c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vrModeOnly: 0
 --- !u!1 &1795529645
 GameObject:
   m_ObjectHideFlags: 0
