@@ -1,0 +1,8 @@
+Declaração de objetivos:
+* Escopo;
+* Metas;
+* Mecânica primária.
+
+"Enigma é uma aplicação VR para novos usuários de VR que os desafia a resolver tipos familiares de quebra-cabeças de uma maneira diferente."
+
+"This game challenges your ability to memorize through a puzzle that uses colors and sounds triggered in sequence."
