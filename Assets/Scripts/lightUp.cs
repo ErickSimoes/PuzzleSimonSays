@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class lightUp : MonoBehaviour {
-	/*public Material lightUpMaterial;
+	public Material lightUpMaterial;
 	public GameObject gameLogic;
 	private Material defaultMaterial;
 
@@ -52,5 +52,5 @@ public class lightUp : MonoBehaviour {
 		patternLightUp ();
 		yield return new WaitForSeconds(duration-.1f);
 		aestheticReset ();
-	}*/
+	}
 }
