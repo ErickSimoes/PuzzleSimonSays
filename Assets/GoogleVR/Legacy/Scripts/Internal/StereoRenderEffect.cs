@@ -12,16 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/// This class is defined only the editor does not natively support GVR, or if the current
-/// VR player is the in-editor emulator.
-
 using UnityEngine;
 
 /// @cond
 [RequireComponent(typeof(Camera))]
 [AddComponentMenu("GoogleVR/StereoRenderEffect")]
 public class StereoRenderEffect : MonoBehaviour {
-#if !UNITY_HAS_GOOGLEVR || UNITY_EDITOR
   private Material material;
 
   private Camera cam;
@@ -51,6 +47,6 @@ public class StereoRenderEffect : MonoBehaviour {
     RenderTexture.active = oldActive;
     GL.PopMatrix();
   }
-#endif  // !UNITY_HAS_GOOGLEVR || UNITY_EDITOR
 }
 /// @endcond
+

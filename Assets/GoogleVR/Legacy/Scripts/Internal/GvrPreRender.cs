@@ -12,10 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/// This class is defined only the editor does not natively support GVR, or if the current
-/// VR player is the in-editor emulator.
-#if !UNITY_HAS_GOOGLEVR || UNITY_EDITOR
-
 using UnityEngine;
 
 /// Clears the entire screen.  This script and GvrPostRender work together
@@ -66,7 +62,8 @@ public class GvrPreRender : MonoBehaviour {
   private void SetShaderGlobals() {
     // For any shaders that want to use these numbers for distortion correction.  But only
     // if distortion correction is needed, yet not already being handled by another method.
-    if (GvrViewer.Instance.VRModeEnabled && !GvrViewer.Instance.DistortionCorrectionEnabled) {
+    if (GvrViewer.Instance.VRModeEnabled
+        && GvrViewer.Instance.DistortionCorrection == GvrViewer.DistortionCorrectionMethod.None) {
       GvrProfile p = GvrViewer.Instance.Profile;
       // Distortion vertex shader currently setup for only 6 coefficients.
       if (p.viewer.inverse.Coef.Length > 6) {
@@ -85,5 +82,3 @@ public class GvrPreRender : MonoBehaviour {
     }
   }
 }
-
-#endif  // !UNITY_HAS_GOOGLEVR || UNITY_EDITOR

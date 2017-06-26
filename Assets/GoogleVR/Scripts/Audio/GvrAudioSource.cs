@@ -168,7 +168,8 @@ public class GvrAudioSource : MonoBehaviour {
   public float maxDistance {
     get { return sourceMaxDistance; }
     set {
-      sourceMaxDistance = Mathf.Clamp(value, sourceMinDistance + GvrAudio.distanceEpsilon,
+      sourceMaxDistance = Mathf.Clamp(sourceMaxDistance,
+                                      sourceMinDistance + GvrAudio.distanceEpsilon,
                                       GvrAudio.maxDistanceLimit);
     }
   }
@@ -189,10 +190,6 @@ public class GvrAudioSource : MonoBehaviour {
   [SerializeField]
   private bool hrtfEnabled = true;
 
-  // Unity audio source attached to the game object.
-  [SerializeField]
-  private AudioSource audioSource = null;
-
   // Unique source id.
   private int id = -1;
 
@@ -202,19 +199,18 @@ public class GvrAudioSource : MonoBehaviour {
   // Next occlusion update time in seconds.
   private float nextOcclusionUpdate = 0.0f;
 
+  // Unity audio source attached to the game object.
+  private AudioSource audioSource = null;
+
   // Denotes whether the source is currently paused or not.
   private bool isPaused = false;
 
   void Awake () {
-    if (audioSource == null) {
-      // Ensure the audio source gets created once.
-      audioSource = gameObject.AddComponent<AudioSource>();
-    }
+    audioSource = gameObject.AddComponent<AudioSource>();
     audioSource.enabled = false;
     audioSource.hideFlags = HideFlags.HideInInspector | HideFlags.HideAndDontSave;
     audioSource.playOnAwake = false;
     audioSource.bypassReverbZones = true;
-    audioSource.dopplerLevel = 0.0f;
     audioSource.spatialBlend = 0.0f;
     OnValidate();
     // Route the source output to |GvrAudioMixer|.
@@ -222,14 +218,14 @@ public class GvrAudioSource : MonoBehaviour {
     if(mixer != null) {
       audioSource.outputAudioMixerGroup = mixer.FindMatchingGroups("Master")[0];
     } else {
-      Debug.LogError("GVRAudioMixer could not be found in Resources. Make sure that the GVR SDK " +
+      Debug.LogError("GVRAudioMixer could not be found in Resources. Make sure that the GVR SDK" +
                      "Unity package is imported properly.");
     }
   }
 
   void OnEnable () {
     audioSource.enabled = true;
-    if (playOnAwake && !isPlaying && InitializeSource()) {
+    if (playOnAwake && !isPlaying) {
       Play();
     }
   }
@@ -289,9 +285,6 @@ public class GvrAudioSource : MonoBehaviour {
     if (audioSource != null && InitializeSource()) {
       audioSource.Play();
       isPaused = false;
-    } else {
-      Debug.LogWarning ("GVR Audio source not initialized. Audio playback not supported " +
-                        "until after Awake() and OnEnable(). Try calling from Start() instead.");
     }
   }
 
@@ -300,9 +293,6 @@ public class GvrAudioSource : MonoBehaviour {
     if (audioSource != null && InitializeSource()) {
       audioSource.PlayDelayed(delay);
       isPaused = false;
-    } else {
-      Debug.LogWarning ("GVR Audio source not initialized. Audio playback not supported " +
-                        "until after Awake() and OnEnable(). Try calling from Start() instead.");
     }
   }
 
@@ -316,21 +306,6 @@ public class GvrAudioSource : MonoBehaviour {
     if (audioSource != null && InitializeSource()) {
       audioSource.PlayOneShot(clip, volume);
       isPaused = false;
-    } else {
-      Debug.LogWarning ("GVR Audio source not initialized. Audio playback not supported " +
-                        "until after Awake() and OnEnable(). Try calling from Start() instead.");
-    }
-  }
-
-  /// Plays the clip at a specific time on the absolute time-line that AudioSettings.dspTime reads
-  /// from.
-  public void PlayScheduled (double time) {
-    if (audioSource != null && InitializeSource()) {
-      audioSource.PlayScheduled(time);
-      isPaused = false;
-    } else {
-      Debug.LogWarning ("GVR Audio source not initialized. Audio playback not supported " +
-                        "until after Awake() and OnEnable(). Try calling from Start() instead.");
     }
   }
 

@@ -27,8 +27,8 @@ public class GvrViewerEditor : Editor {
   GUIContent vrModeLabel = new GUIContent("VR Mode Enabled",
       "Sets whether VR mode is enabled.");
 
-  GUIContent distortionCorrectionLabel = new GUIContent("Distortion Correction Enabled",
-      "Sets whether distortion correction is enabled.");
+  GUIContent distortionCorrectionLabel = new GUIContent("Distortion Correction",
+      "The distortion correction method performed by the SDK.");
 
   GUIContent stereoScreenScale = new GUIContent("Stereo Screen Scale",
       "The screen resolution is multiplied by this value when creating the " +
@@ -53,12 +53,6 @@ public class GvrViewerEditor : Editor {
   public override void OnInspectorGUI() {
     GUI.changed = false;
 
-    // Add clickable script field, as would have been provided by DrawDefaultInspector()
-    MonoScript script = MonoScript.FromMonoBehaviour (target as MonoBehaviour);
-    EditorGUI.BeginDisabledGroup (true);
-    EditorGUILayout.ObjectField ("Script", script, typeof(MonoScript), false);
-    EditorGUI.EndDisabledGroup ();
-
     GUIStyle headingStyle = new GUIStyle(GUI.skin.label);
     headingStyle.fontStyle = FontStyle.Bold;
 
@@ -67,8 +61,8 @@ public class GvrViewerEditor : Editor {
     EditorGUILayout.LabelField("General Settings", headingStyle);
     gvrViewer.VRModeEnabled =
         EditorGUILayout.Toggle(vrModeLabel, gvrViewer.VRModeEnabled);
-    gvrViewer.DistortionCorrectionEnabled =
-      EditorGUILayout.Toggle(distortionCorrectionLabel, gvrViewer.DistortionCorrectionEnabled);
+    gvrViewer.DistortionCorrection = (GvrViewer.DistortionCorrectionMethod)
+        EditorGUILayout.EnumPopup(distortionCorrectionLabel, gvrViewer.DistortionCorrection);
     float oldScale = gvrViewer.StereoScreenScale;
     float newScale = EditorGUILayout.Slider(stereoScreenScale, oldScale, 0.25f, 2.0f);
     if (!Mathf.Approximately(newScale, oldScale)) {

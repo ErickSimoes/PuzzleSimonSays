@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissioßns and
 // limitations under the License.
 
-#if UNITY_HAS_GOOGLEVR && UNITY_ANDROID
+#if UNITY_ANDROID
 using UnityEngine;
 
 using System;
@@ -71,7 +71,7 @@ namespace Gvr.Internal {
       internal float y;
     }
 
-    private const string dllName = "gvr";
+    private const string dllName = "gvrunity";
 
     [DllImport(dllName)]
     private static extern int gvr_controller_get_default_options();
@@ -97,7 +97,7 @@ namespace Gvr.Internal {
     private static extern void gvr_controller_state_destroy(ref IntPtr state);
 
     [DllImport(dllName)]
-    private static extern void gvr_controller_state_update(IntPtr api, int flags, IntPtr out_state);
+    private static extern void gvr_controller_state_update(IntPtr api, IntPtr out_state);
 
     [DllImport(dllName)]
     private static extern int gvr_controller_state_get_api_status(IntPtr state);
@@ -199,25 +199,6 @@ namespace Gvr.Internal {
         return;
       }
 
-      // Use IntPtr instead of GetRawObject() so that Unity can shut down gracefully on
-      // Application.Quit(). Note that GetRawObject() is not pinned by the receiver so it's not
-      // cleaned up appropriately on shutdown, which is a known bug in Unity.
-      IntPtr androidContextPtr = AndroidJNI.NewLocalRef(androidContext.GetRawObject());
-      IntPtr classLoaderPtr = AndroidJNI.NewLocalRef(classLoader.GetRawObject());
-      Debug.Log ("Creating and initializing GVR API controller object.");
-      api = gvr_controller_create_and_init_android (IntPtr.Zero, androidContextPtr, classLoaderPtr,
-          options, IntPtr.Zero);
-      AndroidJNI.DeleteLocalRef(androidContextPtr);
-      AndroidJNI.DeleteLocalRef(classLoaderPtr);
-      if (IntPtr.Zero == api) {
-        Debug.LogError("Error creating/initializing Daydream controller API.");
-        error = true;
-        errorDetails = "Failed to initialize Daydream controller API.";
-        return;
-      }
-
-
-
       Debug.Log("Creating and initializing GVR API controller object.");
       api = gvr_controller_create_and_init_android(IntPtr.Zero, androidContext.GetRawObject(),
           classLoader.GetRawObject(), options, IntPtr.Zero);
@@ -244,7 +225,7 @@ namespace Gvr.Internal {
         outState.errorDetails = errorDetails;
         return;
       }
-      gvr_controller_state_update(api, 0, statePtr);
+      gvr_controller_state_update(api, statePtr);
 
       outState.connectionState = ConvertConnectionState(
           gvr_controller_state_get_connection_state(statePtr));
@@ -356,4 +337,4 @@ namespace Gvr.Internal {
 }
 /// @endcond
 
-#endif  // UNITY_HAS_GOOGLEVR && UNITY_ANDROID
+#endif
