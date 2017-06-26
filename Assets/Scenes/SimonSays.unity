@@ -71,8 +71,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 112000095, guid: ed561c53e7020bd4ca6ef1a3aef269ba,
-    type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -204,10 +203,10 @@ Light:
   m_Enabled: 1
   serializedVersion: 7
   m_Type: 0
-  m_Color: {r: 0.50353634, g: 0.055471454, b: 0.83823526, a: 1}
+  m_Color: {r: 0.63267213, g: 0.35748267, b: 0.83823526, a: 0.3137255}
   m_Intensity: 2
   m_Range: 10
-  m_SpotAngle: 70
+  m_SpotAngle: 80
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -255,7 +254,7 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2
+  m_Intensity: 2.5
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2091,7 +2090,7 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2
+  m_Intensity: 2.5
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2366,7 +2365,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 786725579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.52831423, y: 1.1461473, z: 0.19951606}
+  m_LocalPosition: {x: -0.52831423, y: 1.233, z: 0.19951606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1625385481}
@@ -3042,7 +3041,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1773688466}
-        m_MethodName: toggleUI
+        m_MethodName: resetPuzzle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3677,7 +3676,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1773688466}
-        m_MethodName: toggleUI
+        m_MethodName: startPuzzle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4971,7 +4970,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1726717100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.08, z: -0.54}
+  m_LocalPosition: {x: 0, y: 2.167, z: -0.54}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1666006670}
@@ -5021,7 +5020,7 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2
+  m_Intensity: 2.5
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -5142,12 +5141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 167ff67f7a8054e3f895549f6611b2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 783428116}
   startUI: {fileID: 1997336591}
   restartUI: {fileID: 1587828414}
-  startPoint: {fileID: 0}
-  playPoint: {fileID: 0}
-  restartPoint: {fileID: 0}
+  startPoint: {fileID: 1276807794}
+  playPoint: {fileID: 1108726353}
+  restartPoint: {fileID: 80984592}
   playerWon: 0
 --- !u!4 &1773688467
 Transform:
@@ -5545,7 +5544,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1831330141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.7688708, y: 0.018831253, z: -1.3718071}
+  m_LocalPosition: {x: 2.7688708, y: 0.106, z: -1.3718071}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1652025323}
@@ -6145,7 +6144,7 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2
+  m_Intensity: 2.5
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
