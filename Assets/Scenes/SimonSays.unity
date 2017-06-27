@@ -1116,7 +1116,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 117794, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
       propertyPath: m_Name
-      value: Dungeon Orb (4)
+      value: Dungeon Orb (5)
       objectReference: {fileID: 0}
     - target: {fileID: 114610797193264274, guid: 1f1d3383012ab4f1cb31dcc37907601a,
         type: 2}
@@ -1550,7 +1550,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 436798, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 436798, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
       propertyPath: m_LocalScale.x
@@ -3838,13 +3838,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 436798, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114610797193264274, guid: 1f1d3383012ab4f1cb31dcc37907601a,
         type: 2}
       propertyPath: gameLogic
       value: 
       objectReference: {fileID: 1773688466}
+    - target: {fileID: 117794, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
+      propertyPath: m_Name
+      value: Dungeon Orb (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
   m_IsPrefabParent: 0
@@ -4700,7 +4704,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 436798, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 436798, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
       propertyPath: m_LocalScale.x
@@ -4716,7 +4720,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 117794, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
       propertyPath: m_Name
-      value: Dungeon Orb (1)
+      value: Dungeon Orb (4)
       objectReference: {fileID: 0}
     - target: {fileID: 114610797193264274, guid: 1f1d3383012ab4f1cb31dcc37907601a,
         type: 2}
@@ -5112,7 +5116,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 436798, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 436798, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
       propertyPath: m_LocalScale.x
@@ -5128,7 +5132,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 117794, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
       propertyPath: m_Name
-      value: Dungeon Orb (3)
+      value: Dungeon Orb (1)
       objectReference: {fileID: 0}
     - target: {fileID: 114610797193264274, guid: 1f1d3383012ab4f1cb31dcc37907601a,
         type: 2}
@@ -5364,10 +5368,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 2.167, z: -0.54}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
+  - {fileID: 1653099994}
+  - {fileID: 528036566}
   - {fileID: 1666006670}
   - {fileID: 1581297078}
-  - {fileID: 528036566}
-  - {fileID: 1653099994}
   - {fileID: 348755747}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -5540,10 +5544,10 @@ MonoBehaviour:
   playPoint: {fileID: 1108726353}
   restartPoint: {fileID: 80984592}
   puzzleSpheres:
+  - {fileID: 549133155}
+  - {fileID: 2073970111}
   - {fileID: 403194273}
   - {fileID: 1449385749}
-  - {fileID: 2073970111}
-  - {fileID: 549133155}
   - {fileID: 837806425}
   puzzleLength: 5
   puzzleSpeed: 1
