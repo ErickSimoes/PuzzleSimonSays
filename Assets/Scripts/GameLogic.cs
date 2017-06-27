@@ -105,7 +105,7 @@ public class GameLogic : MonoBehaviour {
 		iTween.MoveTo(player,
 			iTween.Hash(
 				"position", startPoint.transform.position,
-				"time", 4,
+				"time", 2,
 				"easetype", "linear",
 				"oncomplete", "resetGame",
 				"oncompletetarget", this.gameObject
