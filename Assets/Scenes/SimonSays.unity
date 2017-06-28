@@ -64,14 +64,14 @@ LightmapSettings:
     m_CompAOExponentDirect: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
-    m_LightmapsBakeMode: 1
+    m_LightmapsBakeMode: 0
     m_TextureCompression: 1
     m_DirectLightInLightProbes: 1
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 112000096, guid: ba8a92fa76947294b8549e57ab9575a0,
+  m_LightingDataAsset: {fileID: 112000096, guid: 7ac2d19e260dfaa49a448efd7838ba22,
     type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
@@ -205,7 +205,7 @@ Light:
   serializedVersion: 7
   m_Type: 0
   m_Color: {r: 0.63267213, g: 0.35748267, b: 0.83823526, a: 0.3137255}
-  m_Intensity: 1.8
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 80
   m_CookieSize: 10
@@ -255,8 +255,8 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2.5
-  m_Range: 5
+  m_Intensity: 2.22
+  m_Range: 2
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -2390,8 +2390,8 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2.5
-  m_Range: 5
+  m_Intensity: 2.22
+  m_Range: 2
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -5230,8 +5230,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 7
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.5
+  m_Color: {r: 0.71323526, g: 0.71323526, b: 0.71323526, a: 1}
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -5252,7 +5252,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 0.9
+  m_BounceIntensity: 0.5
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1625385481
@@ -5827,8 +5827,8 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2.5
-  m_Range: 5
+  m_Intensity: 2.22
+  m_Range: 2
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -6962,8 +6962,8 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2.5
-  m_Range: 5
+  m_Intensity: 2.22
+  m_Range: 2
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
