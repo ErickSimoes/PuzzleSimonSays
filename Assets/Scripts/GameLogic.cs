@@ -18,18 +18,13 @@ public class GameLogic : MonoBehaviour {
 
 	private int currentSolveIndex = 0; //Temporary variable for storing the index that the player is solving for in the pattern.
 
+	public GameObject failAudioHolder;
 
 	// Use this for initialization
 	void Start() {
 		puzzleOrder = new int[puzzleLength]; //Set the size of our array to the declared puzzle length
 		generatePuzzleSequence(); //Generate the puzzle sequence for this playthrough.  
 	}
-
-	// Update is called once per frame
-	void Update() {
-
-	}
-
 
 	public void playerSelection(GameObject sphere) {
 		if (playerWon != true) { //If the player hasn't won yet
@@ -58,7 +53,6 @@ public class GameLogic : MonoBehaviour {
 
 	}
 
-
 	public void startPuzzle() { //Begin the puzzle sequence
 								//Generate a random number one through five, save it in an array.  Do this n times.
 								//Step through the array for displaying the puzzle, and checking puzzle failure or success.
@@ -68,7 +62,6 @@ public class GameLogic : MonoBehaviour {
 		CancelInvoke("displayPattern");
 		InvokeRepeating("displayPattern", 3, puzzleSpeed); //Start running through the displaypattern function
 		currentSolveIndex = 0; //Set our puzzle index at 0
-
 	}
 
 	void displayPattern() { //Invoked repeating.
@@ -90,16 +83,13 @@ public class GameLogic : MonoBehaviour {
 		}
 	}
 
-
 	public void generatePuzzleSequence() {
-
 		int tempReference;
 		for (int i = 0; i < puzzleLength; i++) { //Do this as many times as necessary for puzzle length
 			tempReference = Random.Range(0, puzzleSpheres.Length); //Generate a random reference number for our puzzle spheres
 			puzzleOrder[i] = tempReference; //Set the current index to our randomly generated reference number
 		}
 	}
-
 
 	public void resetPuzzle() { //Reset the puzzle sequence
 		iTween.MoveTo(player,
@@ -114,6 +104,7 @@ public class GameLogic : MonoBehaviour {
 
 		restartUI.SetActive(false);
 	}
+
 	public void resetGame() {
 		restartUI.SetActive(false);
 		startUI.SetActive(true);
@@ -123,11 +114,10 @@ public class GameLogic : MonoBehaviour {
 
 	public void puzzleFailure() { //Do this when the player gets it wrong
 		Debug.Log("You've Failed, Resetting puzzle");
-
+		failAudioHolder.GetComponent<GvrAudioSource>().Play();
 		currentSolveIndex = 0;
 
 		startPuzzle();
-
 	}
 
 	public void puzzleSuccess() { //Do this when the player gets it right
