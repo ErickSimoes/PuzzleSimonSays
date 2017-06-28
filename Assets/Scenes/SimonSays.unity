@@ -1830,19 +1830,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1653099993}
   m_Script: {fileID: 11500000, guid: c18171a3c900f45418cad13fc97733d8, type: 3}
---- !u!114 &549133159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 549133155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18171a3c900f45418cad13fc97733d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lightUpMaterial: {fileID: 2100000, guid: 03abd3809ff8b4cd18d0c359da767966, type: 2}
-  gameLogic: {fileID: 0}
 --- !u!114 &549133161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2783,19 +2770,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 348755746}
   m_Script: {fileID: 11500000, guid: c18171a3c900f45418cad13fc97733d8, type: 3}
---- !u!114 &837806429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 837806425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18171a3c900f45418cad13fc97733d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lightUpMaterial: {fileID: 2100000, guid: 03abd3809ff8b4cd18d0c359da767966, type: 2}
-  gameLogic: {fileID: 0}
 --- !u!114 &837806431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4385,19 +4359,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1581297077}
   m_Script: {fileID: 11500000, guid: c18171a3c900f45418cad13fc97733d8, type: 3}
---- !u!114 &1449385753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1449385749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18171a3c900f45418cad13fc97733d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lightUpMaterial: {fileID: 2100000, guid: 03abd3809ff8b4cd18d0c359da767966, type: 2}
-  gameLogic: {fileID: 0}
 --- !u!114 &1449385755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7092,19 +7053,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 528036565}
   m_Script: {fileID: 11500000, guid: c18171a3c900f45418cad13fc97733d8, type: 3}
---- !u!114 &2073970115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2073970111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18171a3c900f45418cad13fc97733d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lightUpMaterial: {fileID: 2100000, guid: 03abd3809ff8b4cd18d0c359da767966, type: 2}
-  gameLogic: {fileID: 0}
 --- !u!114 &2073970117
 MonoBehaviour:
   m_ObjectHideFlags: 0
