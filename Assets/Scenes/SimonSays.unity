@@ -1205,6 +1205,11 @@ Prefab:
       value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
         Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
+    - target: {fileID: 114610797193264274, guid: 1f1d3383012ab4f1cb31dcc37907601a,
+        type: 2}
+      propertyPath: lightUpMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 34f38e57ad9049447ae809b6c797e2de, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
   m_IsPrefabParent: 0
@@ -1743,6 +1748,11 @@ Prefab:
       value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
         Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
+    - target: {fileID: 114610797193264274, guid: 1f1d3383012ab4f1cb31dcc37907601a,
+        type: 2}
+      propertyPath: lightUpMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 34f38e57ad9049447ae809b6c797e2de, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
   m_IsPrefabParent: 0
@@ -4027,6 +4037,11 @@ Prefab:
       value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
         Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
+    - target: {fileID: 114610797193264274, guid: 1f1d3383012ab4f1cb31dcc37907601a,
+        type: 2}
+      propertyPath: lightUpMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 34f38e57ad9049447ae809b6c797e2de, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
   m_IsPrefabParent: 0
@@ -4950,6 +4965,11 @@ Prefab:
       value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
         Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
+    - target: {fileID: 114610797193264274, guid: 1f1d3383012ab4f1cb31dcc37907601a,
+        type: 2}
+      propertyPath: lightUpMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 34f38e57ad9049447ae809b6c797e2de, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
   m_IsPrefabParent: 0
@@ -5444,6 +5464,11 @@ Prefab:
       value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
         Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
+    - target: {fileID: 114610797193264274, guid: 1f1d3383012ab4f1cb31dcc37907601a,
+        type: 2}
+      propertyPath: lightUpMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 34f38e57ad9049447ae809b6c797e2de, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f1d3383012ab4f1cb31dcc37907601a, type: 2}
   m_IsPrefabParent: 0
