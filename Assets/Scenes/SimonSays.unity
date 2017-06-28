@@ -568,7 +568,7 @@ MonoBehaviour:
   sourceMute: 0
   sourcePitch: 1
   sourcePriority: 128
-  sourceVolume: 0.7
+  sourceVolume: 0.9
   sourceMaxDistance: 500
   sourceMinDistance: 0
   hrtfEnabled: 1
@@ -3656,7 +3656,7 @@ MonoBehaviour:
   sourceMute: 0
   sourcePitch: 1
   sourcePriority: 128
-  sourceVolume: 0.7
+  sourceVolume: 0.9
   sourceMaxDistance: 500
   sourceMinDistance: 0
   hrtfEnabled: 1
@@ -3905,7 +3905,7 @@ MonoBehaviour:
   sourceMute: 0
   sourcePitch: 1
   sourcePriority: 128
-  sourceVolume: 0.7
+  sourceVolume: 0.9
   sourceMaxDistance: 500
   sourceMinDistance: 0
   hrtfEnabled: 1
