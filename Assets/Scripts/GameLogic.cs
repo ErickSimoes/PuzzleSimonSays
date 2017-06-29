@@ -133,7 +133,7 @@ public class GameLogic : MonoBehaviour {
 	}
 
 	public void finishingFlourish() { //A nice visual flourish when the player wins
-									  //this.GetComponent<AudioSource>().Play(); //Play the success audio
+		GetComponent<AudioSource>().Play(); //Play the success audio
 		restartUI.SetActive(true);
 		playerWon = true;
 
