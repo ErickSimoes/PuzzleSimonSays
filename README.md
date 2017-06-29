@@ -34,7 +34,6 @@ Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program
 * Add flaming effect to torches.
 
 ### Necessary adjustments
-* Add more barrels in the scenario (facing and thrown);
 * Adjust the distance of the orbs from the player (move the camera backwards and the orbs farther forward);
 * Decrease the size of the orbs and bring them closer together;
 * Change the skybox;
