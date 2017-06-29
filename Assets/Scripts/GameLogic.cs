@@ -20,10 +20,12 @@ public class GameLogic : MonoBehaviour {
 
 	public GameObject failAudioHolder;
 
+	public Rolling Barrel;
+
 	// Use this for initialization
 	void Start() {
 		puzzleOrder = new int[puzzleLength]; //Set the size of our array to the declared puzzle length
-		generatePuzzleSequence(); //Generate the puzzle sequence for this playthrough.  
+		generatePuzzleSequence(); //Generate the puzzle sequence for this playthrough.
 	}
 
 	public void playerSelection(GameObject sphere) {
@@ -62,6 +64,7 @@ public class GameLogic : MonoBehaviour {
 		CancelInvoke("displayPattern");
 		InvokeRepeating("displayPattern", 3, puzzleSpeed); //Start running through the displaypattern function
 		currentSolveIndex = 0; //Set our puzzle index at 0
+		Barrel.StartAnimation();
 	}
 
 	void displayPattern() { //Invoked repeating.
