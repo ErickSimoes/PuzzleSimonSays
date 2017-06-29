@@ -34,7 +34,6 @@ Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program
 * Add flaming effect to torches.
 
 ### Necessary adjustments
-* Decrease the player's movement speed;
 * Make the background of the start and end panels slightly transparent;
 * Add more barrels in the scenario (facing and thrown);
 * Adjust the distance of the orbs from the player (move the camera backwards and the orbs farther forward);
