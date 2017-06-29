@@ -24,9 +24,9 @@ Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program
 * When the player misses the sequence, a sound is emitted to signal;
 * Automatic camera movement when the user moves on to a new stage of the game (start, play and restart);
 * Upon restarting, a new sequence for the orbs is generated.
+* Orbs should emit particles when selected;
 
 ### Future features
-* Orbs should emit particles when selected;
 * Play sound when the player wins;
 * Each sphere must emit a different sound;
 * When entering the dungeon, an animation is started that positions the orbs properly;
