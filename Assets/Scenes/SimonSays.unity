@@ -210,8 +210,8 @@ Light:
   m_SpotAngle: 80
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
+    m_Type: 2
+    m_Resolution: 0
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -224,7 +224,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ShadowRadius: 0
@@ -16830,6 +16830,7 @@ MonoBehaviour:
   playerWon: 0
   failAudioHolder: {fileID: 1695678923}
   Barrel: {fileID: 840917134}
+  spotLight: {fileID: 39174461}
 --- !u!4 &1773688467
 Transform:
   m_ObjectHideFlags: 0
