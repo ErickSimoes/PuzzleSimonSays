@@ -9,9 +9,8 @@ public class lightUp : MonoBehaviour {
 	private Material defaultMaterial;
 	private ParticleSystem.EmissionModule particle;
 
-	// Use this for initialization
 	void Start() {
-		defaultMaterial = this.GetComponent<MeshRenderer>().material; //Save our initial material as the default
+		defaultMaterial = GetComponent<MeshRenderer>().material; //Save our initial material as the default
 		particle = GetComponentInChildren<ParticleSystem>().emission;
 		particle.enabled = false; //Start without emitting particles
 		//gameLogic = GameObject.Find ("gameLogic");
@@ -22,7 +21,7 @@ public class lightUp : MonoBehaviour {
 	}
 
 	public void gazeLightUp() {
-		this.GetComponent<MeshRenderer>().material = hoverMaterial; //Assign the hover material
+		GetComponent<MeshRenderer>().material = hoverMaterial; //Assign the hover material
 		particle.enabled = true; //Turn on particle emmission
 
 		//this.GetComponent<GvrAudioSource>().Play();
@@ -36,17 +35,17 @@ public class lightUp : MonoBehaviour {
 	}
 
 	public void aestheticReset() {
-		this.GetComponent<MeshRenderer>().material = defaultMaterial; //Revert to the default material
+		GetComponent<MeshRenderer>().material = defaultMaterial; //Revert to the default material
 		particle.enabled = false; //Turn off particle emission
 	}
 
 	public void patternLightUp() { //Lightup behavior when the pattern shows.
-		this.GetComponent<MeshRenderer>().material = lightUpMaterial; //Assign the hover material
+		GetComponent<MeshRenderer>().material = lightUpMaterial; //Assign the hover material
 		particle.enabled = true; //Turn on particle emmission
-		this.GetComponent<GvrAudioSource>().Play(); //Play the audio attached
+		GetComponent<GvrAudioSource>().Play(); //Play the audio attached
 	}
 
-	IEnumerator lightFor(float duration) { //Light us up for a duration.  Used during the pattern display
+	IEnumerator lightFor(float duration) { //Light us up for a duration. Used during the pattern display
 		patternLightUp();
 		yield return new WaitForSeconds(duration - .1f);
 		aestheticReset();
