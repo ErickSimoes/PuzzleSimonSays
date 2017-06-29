@@ -23,11 +23,11 @@ Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program
 * Ambient sound changes if the player is in or out of the building;
 * When the player misses the sequence, a sound is emitted to signal;
 * Automatic camera movement when the user moves on to a new stage of the game (start, play and restart);
-* Upon restarting, a new sequence for the orbs is generated.
+* Upon restarting, a new sequence for the orbs is generated;
 * Orbs should emit particles when selected;
+* Play sound when the player wins.
 
 ### Future features
-* Play sound when the player wins;
 * Each sphere must emit a different sound;
 * When entering the dungeon, an animation is started that positions the orbs properly;
 * Spotlight lights up and increases only when the player arrives at the room (it ceases to be backed to be realtime);
