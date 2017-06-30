@@ -24,8 +24,8 @@ public class LightBehaviour : MonoBehaviour {
 	}
 
 	public static void StartIllumination() {
-		spotLightAngle = 0.5f;
-		pointLightIntensity = 0.05f;
+		spotLightAngle = 1;
+		pointLightIntensity = 0.1f;
 	}
 
 	public void LightDown() {
