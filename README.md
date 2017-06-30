@@ -28,11 +28,11 @@ Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program
 * Play sound when the player wins;
 * Phanton barrel;
 * Special Skybox;
-* Spotlight lights up and increases only when the player arrives at the room.
+* Spotlight lights up and increases only when the player arrives at the room;
+* When entering the dungeon, an animation is started that positions the orbs properly.
 
 ### Future features
 * Each sphere must emit a different sound;
-* When entering the dungeon, an animation is started that positions the orbs properly;
 * Add flaming effect to torches.
 
 ### Necessary adjustments

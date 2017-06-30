@@ -21,6 +21,8 @@ public class GameLogic : MonoBehaviour {
 	public GameObject failAudioHolder;
 
 	public Rolling Barrel;
+	public GameObject[] orbs;
+	public GameObject[] finalPositions;
 
 	// Use this for initialization
 	void Start() {
@@ -66,6 +68,7 @@ public class GameLogic : MonoBehaviour {
 		currentSolveIndex = 0; //Set our puzzle index at 0
 		Barrel.StartAnimation();
 		LightBehaviour.StartIllumination();
+		StartPositionOrbs();
 	}
 
 	void displayPattern() { //Invoked repeating.
@@ -142,6 +145,19 @@ public class GameLogic : MonoBehaviour {
 		restartUI.SetActive(true);
 		playerWon = true;
 
+	}
+
+	private void StartPositionOrbs() {
+		for (int i = 0; i < orbs.Length; i++) {
+			iTween.MoveTo(orbs[i],
+				iTween.Hash(
+					"position", finalPositions[i].transform.position,
+					"time", 3,
+					"easetype", "linear"
+				)
+			);
+		}
+		
 	}
 
 }
