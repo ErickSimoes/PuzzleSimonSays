@@ -36,5 +36,4 @@ Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program
 * Add flaming effect to torches.
 
 ### Necessary adjustments
-* Remove the unused components in order to make the project smaller;
 * Update links of this file.
