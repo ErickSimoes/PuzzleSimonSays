@@ -6,7 +6,8 @@ public class LightBehaviour : MonoBehaviour {
 
 	private static float spotLightAngle = 0;
 	private static float pointLightIntensity = 0;
-
+	private bool intesityMax = false;
+	private float lastTime = 0;
 
 	void Start () {
 		LightDown();
@@ -19,7 +20,17 @@ public class LightBehaviour : MonoBehaviour {
 		}
 
 		foreach (Light light in pointLight) {
-			light.intensity += pointLightIntensity;
+			if (!intesityMax) {
+				light.intensity += pointLightIntensity;
+				if (light.intensity >= 8)
+					intesityMax = true;
+			} else {
+				if (Time.time - lastTime >= 0.5) {
+					light.intensity = Random.Range(6, 8); ;
+					lastTime = Time.time;
+				}
+			}
+
 		}
 	}
 
