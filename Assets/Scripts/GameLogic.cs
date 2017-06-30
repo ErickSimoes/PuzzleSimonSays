@@ -21,7 +21,6 @@ public class GameLogic : MonoBehaviour {
 	public GameObject failAudioHolder;
 
 	public Rolling Barrel;
-	public Light spotLight;
 
 	// Use this for initialization
 	void Start() {
@@ -66,7 +65,7 @@ public class GameLogic : MonoBehaviour {
 		InvokeRepeating("displayPattern", 3, puzzleSpeed); //Start running through the displaypattern function
 		currentSolveIndex = 0; //Set our puzzle index at 0
 		Barrel.StartAnimation();
-		SpotLightBehaviour.StartIncrement();
+		LightBehaviour.StartIllumination();
 	}
 
 	void displayPattern() { //Invoked repeating.
@@ -108,6 +107,7 @@ public class GameLogic : MonoBehaviour {
 		);
 
 		restartUI.SetActive(false);
+		//LightBehaviour.LightDown();
 	}
 
 	public void resetGame() {

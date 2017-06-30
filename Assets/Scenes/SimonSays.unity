@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1625385480}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -71,8 +71,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 112000096, guid: 7ac2d19e260dfaa49a448efd7838ba22,
-    type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -204,10 +203,10 @@ Light:
   m_Enabled: 1
   serializedVersion: 7
   m_Type: 0
-  m_Color: {r: 0.63267213, g: 0.35748267, b: 0.83823526, a: 0.3137255}
+  m_Color: {r: 0.63267213, g: 0.35748267, b: 0.83823526, a: 0.5882353}
   m_Intensity: 1
   m_Range: 10
-  m_SpotAngle: 80
+  m_SpotAngle: 109
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -255,12 +254,12 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2.22
-  m_Range: 2
+  m_Intensity: 8
+  m_Range: 3
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -274,9 +273,9 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &41790999
@@ -937,7 +936,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &197645757
 Transform:
@@ -7794,12 +7793,12 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2.22
-  m_Range: 2
+  m_Intensity: 8
+  m_Range: 3
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -7813,9 +7812,9 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &752773302
@@ -11104,7 +11103,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &856233055
 Transform:
@@ -11857,7 +11856,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e8ceb3c20ebd143238a64ca8a8942118, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: e8ceb3c20ebd143238a64ca8a8942118, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16689,12 +16688,12 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2.22
-  m_Range: 2
+  m_Intensity: 8
+  m_Range: 3
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -16708,9 +16707,9 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &1746414309
@@ -16830,7 +16829,6 @@ MonoBehaviour:
   playerWon: 0
   failAudioHolder: {fileID: 1695678923}
   Barrel: {fileID: 840917134}
-  spotLight: {fileID: 39174461}
 --- !u!4 &1773688467
 Transform:
   m_ObjectHideFlags: 0
@@ -17907,12 +17905,12 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.4705882, g: 0.36186612, b: 0.0069204215, a: 1}
-  m_Intensity: 2.22
-  m_Range: 2
+  m_Intensity: 8
+  m_Range: 3
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -17926,9 +17924,9 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &2033950799
@@ -18026,6 +18024,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4403a6d77ca949b7b0dfe13ac0f9fb1, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &2057469047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2057469049}
+  - component: {fileID: 2057469048}
+  m_Layer: 0
+  m_Name: LightBehaviour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2057469048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2057469047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a1c692155298f4eb2c8d8b4eaf980c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotLight: {fileID: 39174461}
+  pointLight:
+  - {fileID: 2033950798}
+  - {fileID: 41790998}
+  - {fileID: 1733136498}
+  - {fileID: 745642134}
+--- !u!4 &2057469049
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2057469047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5056646, y: 1.6019417, z: 0.06530976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2069845943
 GameObject:
   m_ObjectHideFlags: 0
@@ -21035,7 +21079,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e8ceb3c20ebd143238a64ca8a8942118, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: e8ceb3c20ebd143238a64ca8a8942118, type: 3}
       propertyPath: m_StaticEditorFlags
