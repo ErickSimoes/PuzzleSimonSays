@@ -33,7 +33,8 @@ Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program
 * Add flaming effect to torches.
 
 ### Future features
-* Each sphere must emit a different sound.
+* Each sphere must emit a different sound;
+* The ambient change when the player out of the building.
 
 ### Necessary adjustments
 * Update links of this file.
