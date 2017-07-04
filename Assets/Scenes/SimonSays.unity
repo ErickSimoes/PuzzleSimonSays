@@ -561,16 +561,16 @@ MonoBehaviour:
   gainDb: 0
   occlusionEnabled: 0
   playOnAwake: 1
-  rolloffMode: 0
+  rolloffMode: 1
   spread: 0
-  sourceClip: {fileID: 8300000, guid: ea7fd1cd08a5f4978a2bd84589bdf195, type: 3}
+  sourceClip: {fileID: 8300000, guid: 32eaaab2f6d6bbc4d802d86cca1c027e, type: 3}
   sourceLoop: 1
   sourceMute: 0
   sourcePitch: 1
   sourcePriority: 128
   sourceVolume: 0.9
-  sourceMaxDistance: 500
-  sourceMinDistance: 0
+  sourceMaxDistance: 5
+  sourceMinDistance: 4.5
   hrtfEnabled: 1
 --- !u!1 &83407595
 GameObject:
