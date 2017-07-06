@@ -1,9 +1,9 @@
 VR Nanodegree Course 4 Project - Puzzle Simon Says
 -------------------------------------------------------------------------------
-Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program](https://www.udacity.com/course/vr-developer-nanodegree--nd017)
+Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program](https://www.udacity.com/vr).
 
-#### Here's the documentation in [English](#) and [Portuguese](#).
-#### Download Android apk [here](#)
+#### Here's the documentation in [English](https://medium.com/p/a56725ccf8cb/) and [Portuguese](https://medium.com/p/3fcc4626b22c/).
+#### Download Android apk [here](https://github.com/ErickSimoes/PuzzleSimonSays/releases/download/v1.0/PuzzleSimonSays.apk).
 
 ### About
 * **Author**: [Erick Simões](https://github.com/ErickSimoes)
@@ -15,7 +15,7 @@ Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program
 
 ### Objective
 5 orbs light up on the screen in random order as in a Simon Say memorabilia game. The player must memorize and repeat the sequence. To select a sphere the player should look at it and push the touch button.
-> Note: It is necessary to use a virtual reality glasses such as Google Card Board or similar
+> Note: It is necessary to use a virtual reality glasses such as **Google Cardboard** or similar.
 
 ### Features
 * Start screen disappears when 'Start' is clicked. 'Restart' screen appears only when the player wins the game;
@@ -35,6 +35,3 @@ Virtual Reality Example Project for the [Udacity VR Developer Nanodegree Program
 ### Future features
 * Each sphere must emit a different sound;
 * The ambient change when the player out of the building.
-
-### Necessary adjustments
-* Update links of this file.
